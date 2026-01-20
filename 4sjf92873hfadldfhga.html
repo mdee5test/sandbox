@@ -8,7 +8,12 @@
   If you are not redirected, <a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.device.messaging">click here</a>.
 
   <script>
-    setTimeout(()=>{window.location.href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.csapp"}, 1000)
+    window.onload = function() {
+      setTimeout(()=>{
+        window.location.href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.csapp";
+      }, 1000)
+    }
+    
   </script>
 </body>
 </html>
